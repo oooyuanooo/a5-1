@@ -9,3 +9,4 @@ for i in str:
 file = open("str.txt",'w')
 for i in range(len_str):
          file.write(np.binary_repr(str_list[i],width=8)+"\n")
+file.close()
