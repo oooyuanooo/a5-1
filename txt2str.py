@@ -1,13 +1,10 @@
 #! /usr/bin/python3
-file = open("/home/jpyuan/A5-1/output.txt")
+file = open("./output.txt")
 line = file.readline()
-str1 = ""
-str2 = ""
+alist = []
 for index,line in enumerate(file):
     n = line.strip()
     print(chr(int(n,2)))
-    str1 += chr(int(n,2))
-    str2 += str(int(n,2))
-print(str1)
+    alist.append(chr(int(n,2)))
+print(''.join(alist))
 file.close()
-print(str2)
